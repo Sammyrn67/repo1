@@ -107,7 +107,7 @@ describe("check build output for a generic post", () => {
       for (let b of buttons) {
         expect(
           (b.firstElementChild === null && b.textContent.trim()) ||
-            b.getAttribute("aria-label") != null
+            b.getAttribute("aria-label") !== null
         ).to.be.true;
       }
     });
